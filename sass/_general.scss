@@ -1,0 +1,154 @@
+article,
+blockquote,
+body,
+div,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+input,
+label,
+li,
+p,
+section,
+select,
+span,
+table,
+td,
+form,
+tr,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main-font;
+    font-weight: $bold;
+}
+
+a {
+    color: #00b0ff;
+    font-family: $paragraph-font;
+    font-weight: $normal;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        color: #00b0ff;
+    }
+}
+
+h2 {
+    color: #fff;
+}
+
+.label-bonus {
+    background-color: #fff;
+    color: #2a2a2a;
+    @include box-shadow(1px 2px 3px #ccc);
+    font-size: 1em;
+    padding: 0.2em 0.6em 0.2em;
+    margin-left: 5px;
+}
+
+.button {
+    display: block;
+    color: #fff;
+    font-family: $main-font;
+    font-size: 14px / 16px * 1em;
+    letter-spacing: 0.08em;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: $bold;
+    background-color: $button-primary;
+    border-radius: 4px;
+    border-bottom: 3px solid $button-primary-border;
+    text-align: center;
+    position: relative;
+    @include transition(0.3s all ease);
+    &:hover {
+        background-color: $button-primary-hover;
+    }
+    &.green-btn {
+        width: 190px;
+        height: 43px;
+        font-size: 14px / 16px * 1em;
+        text-transform: uppercase;
+        background: #00ad0c;
+        border-bottom-color: #298704;
+        &:hover {
+            background: #20C12B;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    &.dark-blue-btn {
+        width: 190px;
+        height: 43px;
+        font-size: 14px / 16px * 1em;
+        text-transform: uppercase;
+        background: #34495e;
+        border-bottom-color: #002345;
+        &:hover {
+            background: #415569;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    &.red-btn {
+
+        width: 190px;
+        height: 43px;
+        font-size: 14px / 16px * 1em;
+        text-transform: uppercase;
+        background: #ad0000;
+        border-bottom-color: #870404;
+        &:hover {
+            background: #de0909;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+a.button.secondary {
+    background-color: $button-secondary;
+    border-bottom-color: $button-secondary-border;
+    &:hover {
+        background-color: $button-secondary-hover;
+        color: #fff;
+    }
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: $main-font;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}

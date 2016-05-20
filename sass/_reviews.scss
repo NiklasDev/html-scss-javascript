@@ -1,0 +1,177 @@
+.player-reviews {
+    h3.title {
+        text-transform: uppercase;
+        color: #4e5c64;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d5d5d5;
+        margin-bottom: 30px;
+        font-size: 24px / 16px * 1em;
+        @media screen and (min-width: $screen-xs-max) {
+            padding-right: 10%;
+        }
+        a {
+            text-transform: none;
+            color: #4e5c64;
+            font-weight: bold;
+            @include transition(0.3s all ease);
+            &:hover {
+                color: #00B0FF;
+                text-decoration: none;
+            }
+        }
+    }
+    .review-block {
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+        margin-bottom: 55px;
+        .author-info {
+            .user-icon {
+                float: left;
+                width: 60px;
+                font-size: 30px;
+                @media screen and (max-width: $screen-xs-max) {
+                    float: none;
+                    @include center-block();
+                    text-align: center;
+                    width: 45px;
+                    margin-bottom: 5px;
+                }
+            }
+            .info-cont {
+                width: calc(100% - 60px);
+                float: left;
+                @media screen and (max-width: $screen-xs-max) {
+                    float: none;
+                    @include center-block();
+                    text-align: center;
+                }
+                hr {
+                    height: 1px;
+                    border-top: 1px solid #f5f5f5;
+                    background: #e2e2e2;
+                }
+                h5.author-nickname {
+                    color: #2c94fc;
+                    font-size: 18px / 16px * 1em;
+                    + p {
+                        color: #7c7c7c;
+                        font-size: 14px / 16px * 1em;
+                        font-family: $paragraph-font;
+                        margin-top: 3px;
+                        img {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .date-reviewed {
+                    >p {
+                        float: left;
+                        color: #959595;
+                        font-family: $paragraph-font;
+                        @media screen and (max-width: $screen-xs-max) {
+                            float: none;
+                        }
+                        span {
+                            color: #6e6e6e;
+                        }
+                    }
+                    ul.rating {
+                        width: 200px;
+                        @media screen and (max-width: $screen-xs-max) {
+                            @include center-block();
+                            float: none;
+                            margin-top: 10px;
+                        }
+                        li {
+                            float: left;
+                            &.filled.red {
+                                i {
+                                    color: #f9362c;
+                                }
+                            }
+                            &.filled.green {
+                                i {
+                                    color: #00bd50;
+                                }
+                            }
+                            i {
+                                width: 17px;
+                                height: 17px;
+                                margin-right: 3px;
+                                color: #c3c3c3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comments-content {
+            margin-top: 40px;
+        }
+        .comment-single {
+            @include clearfix;
+            margin-bottom: 40px;
+        }
+        .comm-icon {
+            width: 60px;
+            float: left;
+            font-size: 30px;
+            .icon-thumbs-down3 {
+                color: #FF2B2E;
+            }
+            .icon-thumbs-up3 {
+                color: #00A361;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        .comm-text {
+            width: calc(100% - 60px);
+            @media screen and (max-width: $screen-xs-max) {
+                width: 100%;
+            }
+            float: left;
+            p {
+                font-size: 18px;
+                @media screen and (max-width: $screen-xs-max) {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+        .show-more {
+            a {
+                font-family: $paragraph-font;
+                color: #1588fc;
+                margin-left: 60px;
+                font-size: 1em;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+                a {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.actions-reviews {
+    @include clearfix;
+    .button {
+        float: left;
+        margin-right: 24px;
+        cursor: pointer;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        .button {
+            float: none;
+            @include center-block();
+            margin-bottom: 7px;
+        }
+    }
+}

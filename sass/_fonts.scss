@@ -1,0 +1,31 @@
+//Roboto fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+
+//Open Sans fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,500,300);
+
+//Montserat fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+//Icon-font
+@import '../fonts/icon-font/demo-files/demo';
+
+//Montseratt adding black and extrabold
+@font-face {
+	font-family: 'MontserratExtra';
+	src: url('../fonts/montserrat/Montserrat-ExtraBold.otf');
+}
+
+@font-face {
+	font-family: 'MontserratBlack';
+	src: url('../fonts/montserrat/Montserrat-Black.otf');
+}
+
+
+$main-font: 'Montserrat', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;
+$promo-msg-font: 'GoodDog', sans-serif;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+

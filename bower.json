@@ -1,0 +1,22 @@
+{
+  "name": "icom",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "owl.carousel": "owl-carousel2#^2.0.0-beta.3",
+    "imgLiquid": "^0.9.944",
+    "lightbox2": "^2.8.2",
+    "masonry": "^4.0.0",
+  }
+}

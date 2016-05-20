@@ -1,0 +1,20 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width: $screen-md-max) {}
+
+@media only screen and (max-width: $screen-sm-max) {}
+
+@media only screen and (max-width: $screen-xs-max) {
+	.items-slider h3.title, .why-us h3, .guide-for-users h3, .top-casinos h3 {
+		text-align: center;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media only screen and (min-width: $screen-md-max) {}
+
+@media only screen and (min-width: $screen-sm-max) {}
+
+@media only screen and (min-width: $screen-xs-max) {}
