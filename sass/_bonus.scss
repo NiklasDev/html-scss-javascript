@@ -1,0 +1,397 @@
+.bonus-banner {
+    background-color: #edeef0;
+    @media screen and (max-width: $screen-md-max) {
+        >.container {
+            width: auto;
+        }
+    }
+    .banner {
+        background-color: #363636;
+        padding: 40px 38px 34px 38px;
+        position: relative;
+        min-height: 256px;
+        @media screen and (max-width: $screen-xs-max) {
+            padding: 15px;
+        }
+        .bonus-coin {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            img {
+                height: 100%;
+            }
+        }
+        h1 {
+            font-size: 50px / 16px * 1em;
+            margin-top: -10px;
+            color: #fff;
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+            }
+        }
+        h3 {
+            color: #fff;
+            font-size: 30px / 16px * 1em;
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+        .logo-big {
+            z-index: 10;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            margin-left: -95px;
+            @media screen and (max-width: $screen-md-max) {
+                left: 60%;
+            }
+            @media screen and (max-width: $screen-sm-max) {
+                left: 80%;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+                position: static;
+                margin-bottom: 20px;
+                margin-left: 0;
+            }
+        }
+        .accepted {
+            margin: 20px 0px;
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+            }
+            img {
+                margin-right: 9px;
+            }
+            span {
+                font-size: 17px / 16px * 1em;
+                color: $border;
+                vertical-align: middle;
+            }
+        }
+        .withdrawal-info {
+            position: relative;
+            z-index: 10;
+            @media screen and (max-width: $screen-xs-max) {
+                max-width: 150px;
+                text-align: center;
+                @include center-block();
+            }
+            h4 {
+                color: #858584;
+                text-transform: uppercase;
+                font-size: 14px / 16px * 1em;
+                margin-top: 28px;
+                margin-bottom: 13px;
+            }
+            ul {
+                li {
+                    float: left;
+                    margin-right: 17px;
+                    &:first-child {
+                        min-width: 127px;
+                    }
+                    &:nth-child(2) {
+                        min-width: 55px;
+                    }
+                    &:nth-child(3) {
+                        min-width: 90px;
+                    }
+                    @media screen and (max-width: $screen-xs-max) {
+                        float: none;
+                        margin-right: 0;
+                        margin-bottom: 30px;
+                    }
+                    h5 {
+                        color: #fff;
+                        font-size: 17px / 16px * 1em;
+                    }
+                    p {
+                        margin-top: 3px;
+                        color: #c0c0c0;
+                        font-size: 12px / 16px * 1em;
+                        span {
+                            padding: 1px;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bonus-info {
+    padding: 34px 0px 127px 0px;
+    background: $listing-bg;
+    aside.left-sidebar {
+        padding-top: 0;
+        .top-casinos-banner {
+            padding: 14px 10px;
+            margin-bottom: 35px;
+            background: #fff url('../images/british-flag-big_03.png') no-repeat top;
+            @media screen and (max-width: $screen-md-max) {
+                background: none;
+            }
+            h2 {
+                font-size: 22px / 16px * 1em;
+                color: #000;
+            }
+            ul {
+                list-style-type: none;
+                margin-top: 18px;
+                li {
+                    margin-bottom: 18px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    @include clearfix;
+                    .coin-icon {
+                        width: 32px;
+                        height: 32px;
+                        float: left;
+                        background: url('../images/red-coin_01.png') no-repeat center center;
+                        margin-right: 8px;
+                    }
+                    p.name {
+                        float: left;
+                        font-size: 18px / 16px * 1em;
+                        color: #000;
+                        margin-top: 4px;
+                        margin-right: 4px;
+                        width: calc(100% - 40px - 61px - 4px);
+                    }
+                    .play-btn {
+                        display: block;
+                        padding: 3px 10px;
+                        background-color: #c0392b;
+                        cursor: pointer;
+                        font-size: 18px / 16px * 1em;
+                        color: #fff;
+                        text-transform: uppercase;
+                        width: 61px;
+                        float: right;
+                        border-radius: 4px;
+                        @include transition(0.25s all);
+                        &:hover {
+                            background-color: #D8493B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $screen-md-max) {
+        >.container {
+            width: 870px;
+        }
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        >.container {
+            width: auto;
+        }
+        .row {
+            margin: 0;
+        }
+    }
+    .info-col {
+        @include clearfix;
+        float: left;
+        width: 870px;
+        @media screen and (max-width: $screen-md-max) {
+            width: auto;
+            float: none;
+        }
+        .left-side {
+            width: calc(100% - 300px);
+            margin-right: 30px;
+            float: left;
+            @media screen and (max-width: $screen-sm-max) {
+                float: none;
+                width: auto;
+                max-width: 570px;
+                text-align: center;
+                @include center-block();
+                margin-bottom: 50px;
+            }
+            .heading {
+                p.category {
+                    color: #2ab1f6;
+                    font-size: 10px / 16px * 1em;
+                    text-transform: uppercase;
+                    font-weight: $bold;
+                }
+                h2 {
+                    color: $subtitle;
+                    font-size: 24px / 16px * 1em;
+                    margin-top: 10px;
+                    font-family: 'MontserratExtra';
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .bonus-card {
+            float: right;
+            width: 270px;
+            position: relative;
+            .card {
+                position: relative;
+                height: 456px;
+                border: 1px solid #d5d5d5;
+                padding: 9px;
+                position: relative;
+                text-align: center;
+                z-index: 1;
+                background: url('../images/card-gr.png') no-repeat center center;
+                .clickable {
+                    display: block;
+                    font-family: inherit;
+                }
+                .actions {
+                    position: absolute;
+                    height: 300px;
+                    left: 9px;
+                    right: 9px;
+                }
+                .under-buttons {
+                    position: absolute;
+                    left: 9px;
+                    right: 9px;
+                    bottom: 9px;
+                    .dark-blue-btn {
+                        width: 190px;
+                        @include center-block();
+                        height: 43px;
+                        font-size: 14px / 16px * 1em;
+                        text-transform: uppercase;
+                    }
+                }
+                h5 {
+                    color: #fff;
+                    margin-bottom: 25px;
+                    font-size: 1em;
+                    margin-top: 28px;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    font-size: 3em;
+                    color: #fff;
+                    margin-top: 24px;
+                    line-height: 24px;
+                }
+                p {
+                    font-size: 22px / 16px * 1em;
+                    color: #fff;
+                    margin-top: 20px;
+                    line-height: 19px;
+                }
+                img {
+                    display: initial;
+                    width: initial;
+                    max-width: 100%;
+                }
+                .tick-nmb {
+                    font-size: 32px / 16px * 1em;
+                    font-weight: $bold;
+                    color: #fff;
+                    margin-top: 15px;
+                    line-height: 24px;
+                    display: block;
+                }
+            }
+            @media screen and (max-width: $screen-sm-max) {
+                float: none;
+                @include center-block();
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                width: 270px;
+            }
+        }
+        .items-slider {
+            .container {
+                width: 870px;
+                @media screen and (max-width: $screen-sm-max) {
+                    width: auto;
+                    padding: 0;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    &.slider-cont {
+                        width: 570px;
+                    }
+                }
+                @media screen and (max-width: $screen-xs-max) {
+                    &.slider-cont {
+                        width: 270px;
+                    }
+                }
+            }
+        }
+        .info-table {
+            margin-top: 35px;
+            margin-bottom: 55px;
+            .dark-blue-btn {
+                margin-left: 40px;
+                @media screen and (max-width: $screen-sm-max) {
+                    @include center-block();
+                }
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+            }
+            .add-info-wrap {
+                margin-top: 33px;
+                p {
+                    text-transform: none !important;
+                }
+            }
+            .row {
+                margin: 0;
+                margin-bottom: 25px;
+            }
+            .icon-wr {
+                float: left;
+                width: 20px;
+                text-align: center;
+                font-size: 17px;
+                color: #666;
+                margin-right: 20px;
+                @media screen and (max-width: $screen-sm-max) {
+                    width: 100%;
+                    float: none;
+                }
+            }
+            .description {
+                float: left;
+                width: calc(100% - 45px);
+                @media screen and (max-width: $screen-sm-max) {
+                    width: 100%;
+                    float: none;
+                }
+                p {
+                    color: #3e3e3e;
+                    font-family: $paragraph-font;
+                    font-size: 18px / 16px * 1em;
+                    text-transform: capitalize;
+                    line-height: 22px;
+                }
+            }
+            span.val {
+                color: #2296f7;
+                &:after {
+                    content: ',';
+                    color: #000;
+                }
+                &:last-child {
+                    &:after {
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+}

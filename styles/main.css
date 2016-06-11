@@ -13348,6 +13348,349 @@ svg.sidebar-control {
             content: ',';
             color: #000; }
 
+.bonus-banner {
+  background-color: #edeef0; }
+  @media screen and (max-width: 1199px) {
+    .bonus-banner > .container {
+      width: auto; } }
+  .bonus-banner .banner {
+    background-color: #363636;
+    padding: 40px 38px 34px 38px;
+    position: relative;
+    min-height: 256px; }
+    @media screen and (max-width: 767px) {
+      .bonus-banner .banner {
+        padding: 15px; } }
+    .bonus-banner .banner .bonus-coin {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%; }
+      .bonus-banner .banner .bonus-coin img {
+        height: 100%; }
+    .bonus-banner .banner h1 {
+      font-size: 3.125em;
+      margin-top: -10px;
+      color: #fff; }
+      @media screen and (max-width: 767px) {
+        .bonus-banner .banner h1 {
+          text-align: center; } }
+    .bonus-banner .banner h3 {
+      color: #fff;
+      font-size: 1.875em; }
+      @media screen and (max-width: 767px) {
+        .bonus-banner .banner h3 {
+          text-align: center;
+          margin-top: 10px; } }
+    .bonus-banner .banner .logo-big {
+      z-index: 10;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      margin-left: -95px; }
+      @media screen and (max-width: 1199px) {
+        .bonus-banner .banner .logo-big {
+          left: 60%; } }
+      @media screen and (max-width: 991px) {
+        .bonus-banner .banner .logo-big {
+          left: 80%; } }
+      @media screen and (max-width: 767px) {
+        .bonus-banner .banner .logo-big {
+          text-align: center;
+          position: static;
+          margin-bottom: 20px;
+          margin-left: 0; } }
+    .bonus-banner .banner .accepted {
+      margin: 20px 0px; }
+      @media screen and (max-width: 767px) {
+        .bonus-banner .banner .accepted {
+          text-align: center; } }
+      .bonus-banner .banner .accepted img {
+        margin-right: 9px; }
+      .bonus-banner .banner .accepted span {
+        font-size: 1.0625em;
+        color: #d5d5d5;
+        vertical-align: middle; }
+    .bonus-banner .banner .withdrawal-info {
+      position: relative;
+      z-index: 10; }
+      @media screen and (max-width: 767px) {
+        .bonus-banner .banner .withdrawal-info {
+          max-width: 150px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          display: block; } }
+      .bonus-banner .banner .withdrawal-info h4 {
+        color: #858584;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        margin-top: 28px;
+        margin-bottom: 13px; }
+      .bonus-banner .banner .withdrawal-info ul li {
+        float: left;
+        margin-right: 17px; }
+        .bonus-banner .banner .withdrawal-info ul li:first-child {
+          min-width: 127px; }
+        .bonus-banner .banner .withdrawal-info ul li:nth-child(2) {
+          min-width: 55px; }
+        .bonus-banner .banner .withdrawal-info ul li:nth-child(3) {
+          min-width: 90px; }
+        @media screen and (max-width: 767px) {
+          .bonus-banner .banner .withdrawal-info ul li {
+            float: none;
+            margin-right: 0;
+            margin-bottom: 30px; } }
+        .bonus-banner .banner .withdrawal-info ul li h5 {
+          color: #fff;
+          font-size: 1.0625em; }
+        .bonus-banner .banner .withdrawal-info ul li p {
+          margin-top: 3px;
+          color: #c0c0c0;
+          font-size: 0.75em; }
+          .bonus-banner .banner .withdrawal-info ul li p span {
+            padding: 1px; }
+        .bonus-banner .banner .withdrawal-info ul li:last-child {
+          margin-right: 0; }
+
+.bonus-info {
+  padding: 34px 0px 127px 0px;
+  background: #edeef0; }
+  .bonus-info aside.left-sidebar {
+    padding-top: 0; }
+    .bonus-info aside.left-sidebar .top-casinos-banner {
+      padding: 14px 10px;
+      margin-bottom: 35px;
+      background: #fff url("../images/british-flag-big_03.png") no-repeat top; }
+      @media screen and (max-width: 1199px) {
+        .bonus-info aside.left-sidebar .top-casinos-banner {
+          background: none; } }
+      .bonus-info aside.left-sidebar .top-casinos-banner h2 {
+        font-size: 1.375em;
+        color: #000; }
+      .bonus-info aside.left-sidebar .top-casinos-banner ul {
+        list-style-type: none;
+        margin-top: 18px; }
+        .bonus-info aside.left-sidebar .top-casinos-banner ul li {
+          margin-bottom: 18px; }
+          .bonus-info aside.left-sidebar .top-casinos-banner ul li:last-child {
+            margin-bottom: 0; }
+          .bonus-info aside.left-sidebar .top-casinos-banner ul li:before, .bonus-info aside.left-sidebar .top-casinos-banner ul li:after {
+            content: " ";
+            display: table; }
+          .bonus-info aside.left-sidebar .top-casinos-banner ul li:after {
+            clear: both; }
+          .bonus-info aside.left-sidebar .top-casinos-banner ul li .coin-icon {
+            width: 32px;
+            height: 32px;
+            float: left;
+            background: url("../images/red-coin_01.png") no-repeat center center;
+            margin-right: 8px; }
+          .bonus-info aside.left-sidebar .top-casinos-banner ul li p.name {
+            float: left;
+            font-size: 1.125em;
+            color: #000;
+            margin-top: 4px;
+            margin-right: 4px;
+            width: calc(100% - 40px - 61px - 4px); }
+          .bonus-info aside.left-sidebar .top-casinos-banner ul li .play-btn {
+            display: block;
+            padding: 3px 10px;
+            background-color: #c0392b;
+            cursor: pointer;
+            font-size: 1.125em;
+            color: #fff;
+            text-transform: uppercase;
+            width: 61px;
+            float: right;
+            border-radius: 4px;
+            -webkit-transition: 0.25s all;
+            -o-transition: 0.25s all;
+            -ms-transition: 0.25s all;
+            -moz-transition: 0.25s all;
+            transition: 0.25s all; }
+            .bonus-info aside.left-sidebar .top-casinos-banner ul li .play-btn:hover {
+              background-color: #D8493B; }
+  @media screen and (max-width: 1199px) {
+    .bonus-info > .container {
+      width: 870px; } }
+  @media screen and (max-width: 991px) {
+    .bonus-info > .container {
+      width: auto; }
+    .bonus-info .row {
+      margin: 0; } }
+  .bonus-info .info-col {
+    float: left;
+    width: 870px; }
+    .bonus-info .info-col:before, .bonus-info .info-col:after {
+      content: " ";
+      display: table; }
+    .bonus-info .info-col:after {
+      clear: both; }
+    @media screen and (max-width: 1199px) {
+      .bonus-info .info-col {
+        width: auto;
+        float: none; } }
+    .bonus-info .info-col .left-side {
+      width: calc(100% - 300px);
+      margin-right: 30px;
+      float: left; }
+      @media screen and (max-width: 991px) {
+        .bonus-info .info-col .left-side {
+          float: none;
+          width: auto;
+          max-width: 570px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          margin-bottom: 50px; } }
+      .bonus-info .info-col .left-side .heading p.category {
+        color: #2ab1f6;
+        font-size: 0.625em;
+        text-transform: uppercase;
+        font-weight: 700; }
+      .bonus-info .info-col .left-side .heading h2 {
+        color: #49555c;
+        font-size: 1.5em;
+        margin-top: 10px;
+        font-family: 'MontserratExtra';
+        text-transform: uppercase; }
+    .bonus-info .info-col .bonus-card {
+      float: right;
+      width: 270px;
+      position: relative; }
+      .bonus-info .info-col .bonus-card .card {
+        position: relative;
+        height: 456px;
+        border: 1px solid #d5d5d5;
+        padding: 9px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        background: url("../images/card-gr.png") no-repeat center center; }
+        .bonus-info .info-col .bonus-card .card .clickable {
+          display: block;
+          font-family: inherit; }
+        .bonus-info .info-col .bonus-card .card .actions {
+          position: absolute;
+          height: 300px;
+          left: 9px;
+          right: 9px; }
+        .bonus-info .info-col .bonus-card .card .under-buttons {
+          position: absolute;
+          left: 9px;
+          right: 9px;
+          bottom: 9px; }
+          .bonus-info .info-col .bonus-card .card .under-buttons .dark-blue-btn {
+            width: 190px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 43px;
+            font-size: 0.875em;
+            text-transform: uppercase; }
+        .bonus-info .info-col .bonus-card .card h5 {
+          color: #fff;
+          margin-bottom: 25px;
+          font-size: 1em;
+          margin-top: 28px;
+          text-transform: uppercase; }
+        .bonus-info .info-col .bonus-card .card h2 {
+          font-size: 3em;
+          color: #fff;
+          margin-top: 24px;
+          line-height: 24px; }
+        .bonus-info .info-col .bonus-card .card p {
+          font-size: 1.375em;
+          color: #fff;
+          margin-top: 20px;
+          line-height: 19px; }
+        .bonus-info .info-col .bonus-card .card img {
+          display: initial;
+          width: initial;
+          max-width: 100%; }
+        .bonus-info .info-col .bonus-card .card .tick-nmb {
+          font-size: 2em;
+          font-weight: 700;
+          color: #fff;
+          margin-top: 15px;
+          line-height: 24px;
+          display: block; }
+      @media screen and (max-width: 991px) {
+        .bonus-info .info-col .bonus-card {
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          margin-bottom: 50px; } }
+      @media screen and (max-width: 767px) {
+        .bonus-info .info-col .bonus-card {
+          width: 270px; } }
+    .bonus-info .info-col .items-slider .container {
+      width: 870px; }
+      @media screen and (max-width: 991px) {
+        .bonus-info .info-col .items-slider .container {
+          width: auto;
+          padding: 0; } }
+      @media screen and (max-width: 991px) {
+        .bonus-info .info-col .items-slider .container.slider-cont {
+          width: 570px; } }
+      @media screen and (max-width: 767px) {
+        .bonus-info .info-col .items-slider .container.slider-cont {
+          width: 270px; } }
+    .bonus-info .info-col .info-table {
+      margin-top: 35px;
+      margin-bottom: 55px; }
+      .bonus-info .info-col .info-table .dark-blue-btn {
+        margin-left: 40px; }
+        @media screen and (max-width: 991px) {
+          .bonus-info .info-col .info-table .dark-blue-btn {
+            margin-left: auto;
+            margin-right: auto;
+            display: block; } }
+      @media screen and (max-width: 767px) {
+        .bonus-info .info-col .info-table {
+          text-align: center; } }
+      .bonus-info .info-col .info-table .add-info-wrap {
+        margin-top: 33px; }
+        .bonus-info .info-col .info-table .add-info-wrap p {
+          text-transform: none !important; }
+      .bonus-info .info-col .info-table .row {
+        margin: 0;
+        margin-bottom: 25px; }
+      .bonus-info .info-col .info-table .icon-wr {
+        float: left;
+        width: 20px;
+        text-align: center;
+        font-size: 17px;
+        color: #666;
+        margin-right: 20px; }
+        @media screen and (max-width: 991px) {
+          .bonus-info .info-col .info-table .icon-wr {
+            width: 100%;
+            float: none; } }
+      .bonus-info .info-col .info-table .description {
+        float: left;
+        width: calc(100% - 45px); }
+        @media screen and (max-width: 991px) {
+          .bonus-info .info-col .info-table .description {
+            width: 100%;
+            float: none; } }
+        .bonus-info .info-col .info-table .description p {
+          color: #3e3e3e;
+          font-family: "Roboto", sans-serif;
+          font-size: 1.125em;
+          text-transform: capitalize;
+          line-height: 22px; }
+      .bonus-info .info-col .info-table span.val {
+        color: #2296f7; }
+        .bonus-info .info-col .info-table span.val:after {
+          content: ',';
+          color: #000; }
+        .bonus-info .info-col .info-table span.val:last-child:after {
+          content: ''; }
+
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 767px) {
   .items-slider h3.title, .why-us h3, .guide-for-users h3, .top-casinos h3 {
