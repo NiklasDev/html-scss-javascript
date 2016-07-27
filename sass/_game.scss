@@ -1,0 +1,293 @@
+.game-banner {
+    background-color: #edeef0;
+    @media screen and (max-width: $screen-md-max) {
+        >.container {
+            width: auto;
+        }
+    }
+    .banner {
+        background: url('../images/game-banner_03.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 22px 38px 29px 38px;
+        position: relative;
+        min-height: 256px;
+        @media screen and (max-width: $screen-xs-max) {
+            padding: 15px;
+        }
+        .button-wrap {
+            margin-top: 10px;
+            .button {
+                float: none;
+            }
+            @media screen and (max-width: $screen-md-max) {
+                right: 38px;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                position: static;
+                .button {
+                    float: none;
+                    display: block;
+                    @include center-block();
+                    margin-top: 20px;
+                }
+            }
+        }
+        h1 {
+            font-size: 68px / 16px * 1em;
+            margin-bottom: 11px;
+            color: #fff;
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+            }
+        }
+        .accepted {
+            margin-top: 10px;
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center;
+            }
+            img {
+                margin-right: 9px;
+            }
+            span {
+                font-size: 24px / 16px * 1em;
+                color: $border;
+                vertical-align: middle;
+            }
+        }
+        .withdrawal-info {
+            position: relative;
+            z-index: 10;
+            @media screen and (max-width: $screen-xs-max) {
+                max-width: 150px;
+                text-align: center;
+                @include center-block();
+            }
+            h4 {
+                color: #858584;
+                text-transform: uppercase;
+                font-size: 14px / 16px * 1em;
+                margin-top: 28px;
+                margin-bottom: 13px;
+            }
+            ul {
+                margin: 26px 0;
+                li {
+                    float: left;
+                    margin-right: 17px;
+                    @media screen and (max-width: $screen-xs-max) {
+                        float: none;
+                        margin-right: 0;
+                        margin-bottom: 30px;
+                    }
+                    h5 {
+                        color: #fff;
+                        font-size: 17px / 16px * 1em;
+                        font-weight: normal;
+                    }
+                    p {
+                        margin-top: 3px;
+                        color: #c7c7c7;
+                        font-size: 14px / 16px * 1em;
+                        span {
+                            padding: 1px;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.game-info {
+    padding: 34px 0px 127px 0px;
+    background: $listing-bg;
+    @media screen and (max-width: $screen-md-max) {
+        >.container {
+            width: 870px;
+        }
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        >.container {
+            width: auto;
+        }
+        .row {
+            margin: 0;
+        }
+    }
+    .info-col {
+        @include clearfix;
+        float: left;
+        width: 870px;
+        .player-reviews {
+            margin-top: 40px;
+        }
+        @media screen and (max-width: $screen-md-max) {
+            width: auto;
+            float: none;
+        }
+        .top-section {
+            p.category {
+                color: #2ab1f6;
+                font-size: 14px / 16px * 1em;
+                text-transform: uppercase;
+                font-family: 'MontserratExtra';
+            }
+            h3.title {
+                font-size: 24px / 16px * 1em;
+                font-family: 'MontserratExtra';
+                color: #49555c;
+                margin-top: 7px;
+            }
+            p.description {
+                font-family: $paragraph-font;
+                font-size: 16px / 16px * 1em;
+                color: #000;
+                line-height: 16px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+            .big-banner {
+                position: relative;
+                &:hover {
+                    .button {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    img {
+                        @include transition(0.3s all);
+                        filter: gray;
+                        /* IE6-9 */
+                        filter: grayscale(1);
+                        /* Microsoft Edge and Firefox 35+ */
+                        -webkit-filter: grayscale(1);
+                        /* Google Chrome, Safari 6+ & Opera 15+ */
+                    }
+                }
+                img {
+                    filter: none;
+                    /* IE6-9 */
+                    filter: grayscale(0);
+                    /* Microsoft Edge and Firefox 35+ */
+                    -webkit-filter: grayscale(0);
+                    /* Google Chrome, Safari 6+ & Opera 15+ */
+                }
+                .black-overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    display: none;
+                }
+                .button {
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition(0.3s opacity);
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    @include translate(-50%,
+                    -50%);
+                }
+            }
+            .action {
+                margin-top: 17px;
+                .button {
+                    @media screen and (max-width: $screen-xs-max) {
+                        @include center-block();
+                    }
+                }
+            }
+        }
+        .options-section {
+            margin-top: 38px;
+            font-family: $paragraph-font;
+            ul {
+                li {
+                    @include clearfix;
+                    margin-bottom: 38px;
+                    i {
+                        font-size: 22px;
+                        float: left;
+                        margin-right: 25px;
+                        color: #666;
+                    }
+                    p {
+                        float: left;
+                        color: #3e3e3e;
+                        font-size: 1.125em;
+                        text-transform: capitalize;
+                        span {
+                            color: #1b8bfe;
+                        }
+                    }
+                }
+            }
+            .left {
+                width: 50%;
+                float: left;
+                @media screen and (max-width: $screen-xs-max) {
+                    float: none;
+                    width: 100%;
+                    ul {
+                        li {
+                            text-align: center;
+                            i {
+                                float: none;
+                                margin-bottom: 10px;
+                                margin-right: 0;
+                            }
+                            p {
+                                float: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                width: 50%;
+                float: left;
+                @media screen and (max-width: $screen-xs-max) {
+                    float: none;
+                    width: 100%;
+                    ul {
+                        li {
+                            text-align: center;
+                            i {
+                                float: none;
+                                margin-bottom: 10px;
+                                margin-right: 0;
+                            }
+                            p {
+                                float: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .items-slider {
+            .container {
+                width: 870px;
+                @media screen and (max-width: $screen-sm-max) {
+                    width: auto;
+                    padding: 0;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    &.slider-cont {
+                        width: 570px;
+                    }
+                }
+                @media screen and (max-width: $screen-xs-max) {
+                    &.slider-cont {
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+}

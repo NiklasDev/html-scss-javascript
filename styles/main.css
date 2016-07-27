@@ -13691,6 +13691,255 @@ svg.sidebar-control {
         .bonus-info .info-col .info-table span.val:last-child:after {
           content: ''; }
 
+.game-banner {
+  background-color: #edeef0; }
+  @media screen and (max-width: 1199px) {
+    .game-banner > .container {
+      width: auto; } }
+  .game-banner .banner {
+    background: url("../images/game-banner_03.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 22px 38px 29px 38px;
+    position: relative;
+    min-height: 256px; }
+    @media screen and (max-width: 767px) {
+      .game-banner .banner {
+        padding: 15px; } }
+    .game-banner .banner .button-wrap {
+      margin-top: 10px; }
+      .game-banner .banner .button-wrap .button {
+        float: none; }
+      @media screen and (max-width: 1199px) {
+        .game-banner .banner .button-wrap {
+          right: 38px; } }
+      @media screen and (max-width: 767px) {
+        .game-banner .banner .button-wrap {
+          position: static; }
+          .game-banner .banner .button-wrap .button {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 20px; } }
+    .game-banner .banner h1 {
+      font-size: 4.25em;
+      margin-bottom: 11px;
+      color: #fff; }
+      @media screen and (max-width: 767px) {
+        .game-banner .banner h1 {
+          text-align: center; } }
+    .game-banner .banner .accepted {
+      margin-top: 10px; }
+      @media screen and (max-width: 767px) {
+        .game-banner .banner .accepted {
+          text-align: center; } }
+      .game-banner .banner .accepted img {
+        margin-right: 9px; }
+      .game-banner .banner .accepted span {
+        font-size: 1.5em;
+        color: #d5d5d5;
+        vertical-align: middle; }
+    .game-banner .banner .withdrawal-info {
+      position: relative;
+      z-index: 10; }
+      @media screen and (max-width: 767px) {
+        .game-banner .banner .withdrawal-info {
+          max-width: 150px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          display: block; } }
+      .game-banner .banner .withdrawal-info h4 {
+        color: #858584;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        margin-top: 28px;
+        margin-bottom: 13px; }
+      .game-banner .banner .withdrawal-info ul {
+        margin: 26px 0; }
+        .game-banner .banner .withdrawal-info ul li {
+          float: left;
+          margin-right: 17px; }
+          @media screen and (max-width: 767px) {
+            .game-banner .banner .withdrawal-info ul li {
+              float: none;
+              margin-right: 0;
+              margin-bottom: 30px; } }
+          .game-banner .banner .withdrawal-info ul li h5 {
+            color: #fff;
+            font-size: 1.0625em;
+            font-weight: normal; }
+          .game-banner .banner .withdrawal-info ul li p {
+            margin-top: 3px;
+            color: #c7c7c7;
+            font-size: 0.875em; }
+            .game-banner .banner .withdrawal-info ul li p span {
+              padding: 1px; }
+          .game-banner .banner .withdrawal-info ul li:last-child {
+            margin-right: 0; }
+
+.game-info {
+  padding: 34px 0px 127px 0px;
+  background: #edeef0; }
+  @media screen and (max-width: 1199px) {
+    .game-info > .container {
+      width: 870px; } }
+  @media screen and (max-width: 991px) {
+    .game-info > .container {
+      width: auto; }
+    .game-info .row {
+      margin: 0; } }
+  .game-info .info-col {
+    float: left;
+    width: 870px; }
+    .game-info .info-col:before, .game-info .info-col:after {
+      content: " ";
+      display: table; }
+    .game-info .info-col:after {
+      clear: both; }
+    .game-info .info-col .player-reviews {
+      margin-top: 40px; }
+    @media screen and (max-width: 1199px) {
+      .game-info .info-col {
+        width: auto;
+        float: none; } }
+    .game-info .info-col .top-section p.category {
+      color: #2ab1f6;
+      font-size: 0.875em;
+      text-transform: uppercase;
+      font-family: 'MontserratExtra'; }
+    .game-info .info-col .top-section h3.title {
+      font-size: 1.5em;
+      font-family: 'MontserratExtra';
+      color: #49555c;
+      margin-top: 7px; }
+    .game-info .info-col .top-section p.description {
+      font-family: "Roboto", sans-serif;
+      font-size: 1em;
+      color: #000;
+      line-height: 16px;
+      margin-top: 30px;
+      margin-bottom: 40px; }
+    .game-info .info-col .top-section .big-banner {
+      position: relative; }
+      .game-info .info-col .top-section .big-banner:hover .button {
+        visibility: visible;
+        opacity: 1; }
+      .game-info .info-col .top-section .big-banner:hover img {
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        transition: 0.3s all;
+        filter: gray;
+        /* IE6-9 */
+        filter: grayscale(1);
+        /* Microsoft Edge and Firefox 35+ */
+        -webkit-filter: grayscale(1);
+        /* Google Chrome, Safari 6+ & Opera 15+ */ }
+      .game-info .info-col .top-section .big-banner img {
+        filter: none;
+        /* IE6-9 */
+        filter: grayscale(0);
+        /* Microsoft Edge and Firefox 35+ */
+        -webkit-filter: grayscale(0);
+        /* Google Chrome, Safari 6+ & Opera 15+ */ }
+      .game-info .info-col .top-section .big-banner .black-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: none; }
+      .game-info .info-col .top-section .big-banner .button {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: 0.3s opacity;
+        -o-transition: 0.3s opacity;
+        -ms-transition: 0.3s opacity;
+        -moz-transition: 0.3s opacity;
+        transition: 0.3s opacity;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+    .game-info .info-col .top-section .action {
+      margin-top: 17px; }
+      @media screen and (max-width: 767px) {
+        .game-info .info-col .top-section .action .button {
+          margin-left: auto;
+          margin-right: auto;
+          display: block; } }
+    .game-info .info-col .options-section {
+      margin-top: 38px;
+      font-family: "Roboto", sans-serif; }
+      .game-info .info-col .options-section ul li {
+        margin-bottom: 38px; }
+        .game-info .info-col .options-section ul li:before, .game-info .info-col .options-section ul li:after {
+          content: " ";
+          display: table; }
+        .game-info .info-col .options-section ul li:after {
+          clear: both; }
+        .game-info .info-col .options-section ul li i {
+          font-size: 22px;
+          float: left;
+          margin-right: 25px;
+          color: #666; }
+        .game-info .info-col .options-section ul li p {
+          float: left;
+          color: #3e3e3e;
+          font-size: 1.125em;
+          text-transform: capitalize; }
+          .game-info .info-col .options-section ul li p span {
+            color: #1b8bfe; }
+      .game-info .info-col .options-section .left {
+        width: 50%;
+        float: left; }
+        @media screen and (max-width: 767px) {
+          .game-info .info-col .options-section .left {
+            float: none;
+            width: 100%; }
+            .game-info .info-col .options-section .left ul li {
+              text-align: center; }
+              .game-info .info-col .options-section .left ul li i {
+                float: none;
+                margin-bottom: 10px;
+                margin-right: 0; }
+              .game-info .info-col .options-section .left ul li p {
+                float: none; } }
+      .game-info .info-col .options-section .right {
+        width: 50%;
+        float: left; }
+        @media screen and (max-width: 767px) {
+          .game-info .info-col .options-section .right {
+            float: none;
+            width: 100%; }
+            .game-info .info-col .options-section .right ul li {
+              text-align: center; }
+              .game-info .info-col .options-section .right ul li i {
+                float: none;
+                margin-bottom: 10px;
+                margin-right: 0; }
+              .game-info .info-col .options-section .right ul li p {
+                float: none; } }
+    .game-info .info-col .items-slider .container {
+      width: 870px; }
+      @media screen and (max-width: 991px) {
+        .game-info .info-col .items-slider .container {
+          width: auto;
+          padding: 0; } }
+      @media screen and (max-width: 991px) {
+        .game-info .info-col .items-slider .container.slider-cont {
+          width: 570px; } }
+      @media screen and (max-width: 767px) {
+        .game-info .info-col .items-slider .container.slider-cont {
+          width: 270px; } }
+
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 767px) {
   .items-slider h3.title, .why-us h3, .guide-for-users h3, .top-casinos h3 {
